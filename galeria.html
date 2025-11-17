@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Galeria - Loja de Carros</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- adicionado: sidebar lateral igual às demais páginas -->
+	<aside class="sidebar">
+		<h1 class="logo">
+			<span class="logo-icon" aria-hidden="true">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+					<path d="M3 13l1-3 3-4h10l3 4 1 3v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5zM7 9l-1 2h11l-1-2H7zm1 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+				</svg>
+			</span>
+			Loja de Carros
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="tabela.html">Produtos</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li class="nav-bottom"><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<header class="page-header">
+		<nav class="top-nav">
+			<a href="index.html">Início</a> |
+			<a href="cadastro.html">Cadastro</a> |
+			<a href="tabela.html">Tabela</a>
+		</nav>
+	</header>
+
+	<!-- alterado: usar .content para respeitar a sidebar fixa -->
+	<main class="content">
+		<section class="videos">
+			<h2>Vídeos</h2>
+
+			<div class="video-wrap">
+				<video controls>
+					<!-- fonte original pode não ser mp4 direto; manter como exemplo -->
+					<source src="https://www.bing.com/videos/search?q=videos%20bmw&qs=n&form=QBVR&sp=-1&lq=0&pq=videos%20bm&sc=10-9&sk=&cvid=FD09688B635B4AF0925711F0B848217F" type="video/mp4">
+					Seu navegador não suporta a tag de vídeo.
+				</video>
+			</div>
+
+			<div class="video-wrap">
+				<video controls>
+					<source src="https://www.bing.com/videos/riverview/relatedvideo?&q=sw4+videos" type="video/mp4">
+					Seu navegador não suporta a tag de vídeo.
+				</video>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Loja de Carros</p>
+	</footer>
+</body>
+</html>

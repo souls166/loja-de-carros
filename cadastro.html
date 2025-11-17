@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Cadastro - Loja de Carros</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- adicionado: sidebar lateral igual ao index -->
+	<aside class="sidebar">
+		<h1 class="logo">
+			<span class="logo-icon" aria-hidden="true">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+					<path d="M3 13l1-3 3-4h10l3 4 1 3v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5zM7 9l-1 2h11l-1-2H7zm1 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+				</svg>
+			</span>
+			Loja de Carros
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="tabela.html">Produtos</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li class="nav-bottom"><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<main class="content">
+		<form method="post" action="#" class="form-cadastro">
+			<label>Nome:<br><input type="text" name="nome"></label><br><br>
+
+			<label>Descrição:<br>
+				<textarea name="descricao" rows="4"></textarea>
+			</label><br><br>
+
+			<label>Preço:<br><input type="number" name="preco" step="0.01"></label><br><br>
+
+			<label>Categoria:<br>
+				<select name="categoria">
+					<option>BMW</option>
+					<option>Ferrari</option>
+					<option>Toyota</option>
+					<option>Outros</option>
+				</select>
+			</label><br><br>
+
+			<input type="submit" value="Cadastrar" class="btn">
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Loja de Carros</p>
+	</footer>
+</body>
+</html>
