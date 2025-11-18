@@ -5,9 +5,20 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Loja de Carros</title>
 	<link rel="stylesheet" href="styles.css">
+	<!-- Estilos internos críticos (redundância para funcionar sem depender apenas do arquivo externo) -->
+	<style>
+	  /* estilos internos essenciais */
+	  body{background:#f7f7f7;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial;margin:0}
+	  .sidebar{width:220px;background:#3e2042;color:#fff;position:fixed;top:0;left:0;bottom:0;padding:20px;display:flex;flex-direction:column}
+	  .content{margin-left:220px;padding:24px}
+	  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+	  .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+	  .card-img{width:100%;height:160px;object-fit:cover;display:block}
+	  @media (max-width:800px){.sidebar{position:relative;width:100%;} .content{margin-left:0}}
+	</style>
 </head>
 <body>
-	<aside class="sidebar">
+	<aside class="sidebar" style="background:#3e2042;color:#ffffff;">
 		<h1 class="logo">
 			<span class="logo-icon" aria-hidden="true">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -29,7 +40,7 @@
 
 	<main class="content">
 		<header class="page-header">
-			<h2>Bem-vindo à nossa loja</h2>
+		<h2 style="color:#260e30">Bem-vindo à nossa loja</h2>
 		</header>
 
 		<section id="apresentacao">

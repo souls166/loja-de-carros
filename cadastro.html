@@ -5,10 +5,17 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Cadastro - Loja de Carros</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body{background:#f7f7f7;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial;margin:0}
+		.sidebar{width:220px;background:#3e2042;color:#fff;position:fixed;top:0;left:0;bottom:0;padding:20px;display:flex;flex-direction:column}
+		.content{margin-left:220px;padding:24px}
+		.form-cadastro{background:#fff;padding:18px;border-radius:8px}
+		@media (max-width:800px){.sidebar{position:relative;width:100%}.content{margin-left:0}}
+	</style>
 </head>
 <body>
 	<!-- adicionado: sidebar lateral igual ao index -->
-	<aside class="sidebar">
+	<aside class="sidebar" style="background:#3e2042;color:#ffffff;">
 		<h1 class="logo">
 			<span class="logo-icon" aria-hidden="true">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
